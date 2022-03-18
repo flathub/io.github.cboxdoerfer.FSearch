@@ -1,7 +1,7 @@
 app-id: io.github.cboxdoerfer.FSearch
-runtime: org.freedesktop.Platform
-runtime-version: '21.08'
-sdk: org.freedesktop.Sdk
+runtime: org.gnome.Platform
+runtime-version: '41'
+sdk: org.gnome.Sdk
 command: fsearch
 finish-args:
   # X11 + XShm access
