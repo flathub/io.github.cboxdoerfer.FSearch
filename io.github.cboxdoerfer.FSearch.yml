@@ -27,6 +27,8 @@ cleanup:
 modules:
   - name: fsearch
     buildsystem: meson
+    config-opts:
+      - --buildtype=release
     sources:
       - type: git
         url: https://github.com/cboxdoerfer/fsearch.git
