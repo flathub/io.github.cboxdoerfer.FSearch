@@ -29,8 +29,9 @@ modules:
     buildsystem: meson
     config-opts:
       - --buildtype=release
+      - -Dchannel=flathub-stable
     sources:
       - type: git
         url: https://github.com/cboxdoerfer/fsearch.git
-        tag: 0.1.2
-        commit: 2d612f499009b1f0c3a669dd2f8cdf40f6ef7e3b
+        tag: 0.1.3
+        commit: ba60a002664d80545f2ad5afeab2999013bf4790
