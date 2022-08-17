@@ -33,5 +33,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/cboxdoerfer/fsearch.git
-        tag: 0.2flathub_hotfix
-        commit: d342114ea93837974b3eabde6c9a15cd9fa99163
+        tag: 0.2.1
+        commit: ceaa33766f9c8d9001671a63f0478ef13922831d
