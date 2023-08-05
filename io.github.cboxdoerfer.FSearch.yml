@@ -33,5 +33,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/cboxdoerfer/fsearch.git
-        tag: 0.2.2
-        commit: 06e99b900f96a235fdfbc5ca0ddcbc0ee592faac
+        tag: 0.2.3
+        commit: 0ff26877e1b6d6b84d0e5021f221c69f86f95259
