@@ -1,6 +1,6 @@
 app-id: io.github.cboxdoerfer.FSearch
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 command: fsearch
 finish-args:
@@ -12,26 +12,17 @@ finish-args:
   # Needs to find files everywhere
   - --filesystem=host
 cleanup:
-  - /include
-  - /lib/pkgconfig
-  - /share/pkgconfig
-  - /share/aclocal
-  - /man
   - /share/man
-  - /share/gtk-doc
-  - '*.la'
-  - '*.a'
-  - /lib/girepository-1.0
-  - /share/doc
-  - /share/gir-1.0
 modules:
   - name: fsearch
     buildsystem: meson
     config-opts:
-      - --buildtype=release
+      - -Dbuildtype=release
       - -Dchannel=flathub-stable
     sources:
       - type: git
         url: https://github.com/cboxdoerfer/fsearch.git
         tag: 0.2.3
         commit: 0ff26877e1b6d6b84d0e5021f221c69f86f95259
+      - type: patch
+        path: fix-appdata.patch
