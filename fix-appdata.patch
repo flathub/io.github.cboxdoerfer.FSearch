@@ -1,0 +1,53 @@
+From a5ac56bad81c00d106de7dad9e7e867f8e69fcdf Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sun, 15 Mar 2026 22:50:15 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ data/io.github.cboxdoerfer.FSearch.appdata.xml.in | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+
+diff --git a/data/io.github.cboxdoerfer.FSearch.appdata.xml.in b/data/io.github.cboxdoerfer.FSearch.appdata.xml.in
+index 9c6cae9..e6cc2ec 100644
+--- a/data/io.github.cboxdoerfer.FSearch.appdata.xml.in
++++ b/data/io.github.cboxdoerfer.FSearch.appdata.xml.in
+@@ -4,7 +4,7 @@
+     <id>io.github.cboxdoerfer.FSearch</id>
+     <metadata_license>CC0-1.0</metadata_license>
+     <project_license>GPL-2.0+</project_license>
+-    <name>FSearch</name>
++    <name translate="no">FSearch</name>
+     <summary>A graphical file search application</summary>
+     <description>
+         <p>
+@@ -43,15 +43,18 @@
+     </screenshots>
+     <url type="homepage">https://github.com/cboxdoerfer/fsearch</url>
+     <url type="bugtracker">https://github.com/cboxdoerfer/fsearch/issues</url>
++    <url type="vcs-browser">https://github.com/cboxdoerfer/fsearch</url>
+     <url type="donation">https://github.com/sponsors/cboxdoerfer</url>
+     <url type="help">https://github.com/cboxdoerfer/fsearch/wiki</url>
+     <url type="translate">https://hosted.weblate.org/projects/fsearch/</url>
+     <!-- Translators: please do NOT translate this. -->
+-    <developer_name>Christian Boxdörfer</developer_name>
++    <developer id="io.github.cboxdoerfer">
++      <name>Christian Boxdörfer</name>
++    </developer>
+     <update_contact>christian.boxdoerfer_at_posteo.de</update_contact>
+     <translation type="gettext">fsearch</translation>
+-    <!-- Validate with `appstream-util validate io.github.cboxdoerfer.FSearch.appdata.xml.in`. -->
+-    <content_rating type="oars-1.0"/>
++    <content_rating type="oars-1.1"/>
++    <launchable type="desktop-id">io.github.cboxdoerfer.FSearch.desktop</launchable>
+     <releases>
+         <release date="2023-08-05" version="0.2.3">
+             <description>
+@@ -103,5 +106,4 @@
+             </description>
+         </release>
+     </releases>
+-    <launchable type="desktop-id">io.github.cboxdoerfer.FSearch.desktop</launchable>
+ </component>
+--
+libgit2 1.7.2
+
