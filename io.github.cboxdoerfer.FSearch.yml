@@ -22,7 +22,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/cboxdoerfer/fsearch.git
-        tag: 0.2.3
-        commit: 0ff26877e1b6d6b84d0e5021f221c69f86f95259
-      - type: patch
-        path: fix-appdata.patch
+        tag: 0.3
+        commit: 506e1eded35649f53431a2c79fcf7583c8c2a3f9
