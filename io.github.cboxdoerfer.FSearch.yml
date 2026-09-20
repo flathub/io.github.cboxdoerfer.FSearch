@@ -1,6 +1,6 @@
 app-id: io.github.cboxdoerfer.FSearch
 runtime: org.gnome.Platform
-runtime-version: '50'
+runtime-version: '51'
 sdk: org.gnome.Sdk
 command: fsearch
 finish-args:
@@ -22,5 +22,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/cboxdoerfer/fsearch.git
-        tag: 0.3.1
-        commit: 1f215bc5ed19a50c3fbdd44c0a5533255e0452a8
+        tag: 0.3.2
+        commit: 6d119c034410516cfb2104108fc96d1c29a7b222
